@@ -23,7 +23,6 @@ A = np.zeros((M,5),dtype=object)
 #A = [[0 for i in range(N)] for j in range(M)]
 
 reskeys = list(res.keys())
-#print (reskeys)
 resvalue = list(res.values())
 totalsum = sum(resvalue)
 
@@ -75,7 +74,6 @@ utag = 1
 decodedSeq = []
 for i in range(len(inputstr)):
     numDeco = ((tag - ltag)*1.0)/(utag - ltag)
-    #print(numDeco)
     for i in range(M):
         if (float(A[i,3]) < numDeco < float(A[i,4])):
 
